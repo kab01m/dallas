@@ -16,20 +16,24 @@ Original DS1287 have 21 and 22 as not-connected, so by default you do not instal
 
 You can use DS12885, bq3285 or bq4285 depending on what you can find and what original chip you want to replace.
 
-* Dallas DS1287 / DS12887 / DS12B887 : bq3285 or DS12885S, use R1.
-* Dallas DS12C887, DS12887+ : bq3285 or DS12885S+, use R1 and R4.
-* Dallas DS1387 : DS1385, use R1, R4, R5.
-* Dallas DS14287 : bq4285, use R1, R4, R5.
-* Benchmarq BQ3287 : bq3285, use R1, R4.
-* Benchmarq BQ4287 : bq4285, use R1, R4, R5.
-* ODIN OEC12C887 : bq3285 or DS12885S, use R1.
-* VIA VT82887 : bq3285 or DS12885S, use R1.
+* DS1287 series:
+    * Dallas DS1287 / DS12887 / DS12B887 : bq3285 or DS12885S, use R1.
+    * Dallas DS12C887, DS12887+ : bq3285 or DS12885S+, use R1 and R4.
+    * ST M48T86PC1 : bq3285 or DS12885S+, use R1 and R4.
+    * Benchmarq BQ3287 : bq3285, use R1, R4.
+    * ODIN OEC12C887 : bq3285 or DS12885S, use R1.
+    * VIA VT82887 : bq3285 or DS12885S, use R1.
+* DS1387 series
+    * Dallas DS1387 : DS1385, use R1, R4, R5.
+* DS1487 series
+    * Dallas DS14287 : bq4285, use R1, R4, R5.
+    * Benchmarq BQ4287 : bq4285, use R1, R4, R5.
 * Motorola MC146818A can be supported. Tell me if you need it.
 
 #### B1
 
 * DV-87-12 uses BS-1220-2 battery holder (found on Aliexpress).
-* DV-87-12L uses Renata SMTU-1225-LF battery holder.
+* DV-87-12R uses Renata SMTU-1225-LF battery holder.
 
 ### Bill of Materials
 
