@@ -28,7 +28,7 @@ You can use DS12885, bq3285 or bq4285 depending on what you can find and what or
 ### Bill of Materials
 
 * DV-87-12 PCB board, use supplied Gerbers.
-* U1 - DS12885, bq3285 or bq4285.
+* U1 - DS12885, bq3285, bq4285 or DS1385.
 * B1 - BS-1220-2 SMT holder (easily found on Aliexpress)
 * B1 - CR1225 3V lithium cell
 * Y1 - 32.768 kHz crystal, 3215 metric SMD.
@@ -40,5 +40,5 @@ You can use DS12885, bq3285 or bq4285 depending on what you can find and what or
 
 ### Useful links
 
-* (Necrowave project)[https://github.com/necroware/nwX287] for replacing Dallas RTC.
-* (Glitchworks)[https://github.com/glitchwrks] have GW-1287-1 module, but did not publish sources.
+* [Necrowave project](https://github.com/necroware/nwX287) for replacing Dallas RTC.
+* [Glitchworks](https://github.com/glitchwrks) have GW-1287-1 module, but did not publish sources.
