@@ -2,7 +2,24 @@
 
 This project is a complete replacement of widely used RTC modules DS1287, DS12887, DS12887+ originally made by Dallas and their derivatives.
 
+Contents of this repository may be freely used for any purpose including PCB manufacturing and product selling with original copyright marking. DV-87-12 and DV-87-12R were made in DipTrace and DV-87-12SR was made in KiCad EDA 8.0.
+
 ### Options
+
+#### Boards
+
+These are variants of boards using different IC footprint and battery holder:
+
+* DV-87-12:
+    * B1 is BS-1220-2 battery holder.
+    * U1 is SOIC 300-mil (DS12885S, DS12885S+, bq3285, bq4285).
+* DV-87-12R:
+    * B1 is Renata SMTU-1225-LF battery holder.
+    * U1 is SOIC 300-mil (DS12885S, DS12885S+, bq3285, bq4285).
+* DV-87-12SR:
+    * B1 is Renata SMTU-1225-LF battery holder.
+    * U1 is SSOP 150-mil (bq3285LF).
+    * Unfortunately, this board can't be used for bq4285 or DS1387.
 
 #### R1/R2/R3
 
@@ -17,12 +34,12 @@ Original DS1287 have 21 and 22 as not-connected, so by default you do not instal
 You can use DS12885, bq3285 or bq4285 depending on what you can find and what original chip you want to replace.
 
 * DS1287 series:
-    * Dallas DS1287 / DS12887 / DS12B887 : bq3285 or DS12885S, use R1.
+    * Dallas DS1287, DS12887, DS12B887 : bq3285, DS12885S or S+, use R1.
     * Dallas DS12C887, DS12887+ : bq3285 or DS12885S+, use R1 and R4.
     * ST M48T86PC1 : bq3285 or DS12885S+, use R1 and R4.
     * Benchmarq BQ3287 : bq3285, use R1, R4.
-    * ODIN OEC12C887 : bq3285 or DS12885S, use R1.
-    * VIA VT82887 : bq3285 or DS12885S, use R1.
+    * ODIN OEC12C887 : bq3285, DS12885S or S+, use R1.
+    * VIA VT82887 : bq3285, DS12885S or S+, use R1.
 * DS1387 series
     * Dallas DS1387 : DS1385, use R1, R4, R5.
 * DS1487 series
@@ -30,15 +47,10 @@ You can use DS12885, bq3285 or bq4285 depending on what you can find and what or
     * Benchmarq BQ4287 : bq4285, use R1, R4, R5.
 * Motorola MC146818A can be supported. Tell me if you need it.
 
-#### B1
-
-* DV-87-12 uses BS-1220-2 battery holder (found on Aliexpress).
-* DV-87-12R uses Renata SMTU-1225-LF battery holder.
-
 ### Bill of Materials
 
 * DV-87-12 PCB board, use supplied Gerbers.
-* U1 - DS12885, bq3285, bq4285 or DS1385.
+* U1 - DS12885, bq3285, bq4285 or DS1385 (see above).
 * B1 - BS-1220-2 or SMTU-1225-LF.
 * B1 - CR1225 3V lithium cell
 * Y1 - 32.768 kHz crystal, 3215 metric SMD.
@@ -52,3 +64,5 @@ You can use DS12885, bq3285 or bq4285 depending on what you can find and what or
 
 * [Necrowave project](https://github.com/necroware/nwX287) for replacing Dallas RTC.
 * [Glitchworks](https://github.com/glitchwrks) have GW-1287-1 module, but did not publish sources.
+
+None of these were used in that project.

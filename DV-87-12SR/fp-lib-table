@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "DV-87-12")(type "KiCad")(uri "${KIPRJMOD}/DV-87-12.pretty")(options "")(descr ""))
+  (lib (name "DV-87-12SR")(type "KiCad")(uri "${KIPRJMOD}/DV-87-12SR.pretty")(options "")(descr ""))
+)
